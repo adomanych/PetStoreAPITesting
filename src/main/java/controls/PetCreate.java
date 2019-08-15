@@ -7,7 +7,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 import java.util.Collections;
 
-public class PetCreator {
+public class PetCreate {
     private int id = Integer.parseInt(RandomStringUtils.randomNumeric(6));
     private String name = RandomStringUtils.randomAlphabetic(7);
     private Pet pet;

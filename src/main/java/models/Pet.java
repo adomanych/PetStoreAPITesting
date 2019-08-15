@@ -5,7 +5,9 @@ import lombok.*;
 
 import java.util.List;
 
-@Data
+@Getter
+@Setter
+@ToString
 @NoArgsConstructor
 @Builder
 @AllArgsConstructor
@@ -23,4 +25,17 @@ public class Pet {
     @JsonProperty("status")
     private String status;
 
+    @Getter
+    public static enum Status {
+        AVAILABLE("avaliable"), PENDING("pending"), SOLD("sold");
+        private String value;
+
+        Status(String value) {
+            this.value = value;
+        }
+
+        public String toString() {
+            return this.value;
+        }
+    }
 }
