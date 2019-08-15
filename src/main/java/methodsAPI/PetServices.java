@@ -38,7 +38,7 @@ public class PetServices extends BaseSetUp{
     protected Response updatePet(Pet pet) {
         return given(createRequest())
                 .body(FormatToJSon.formatToJSon(pet))
-                .put()
+                .put(petUrl)
                 .then().extract().response().prettyPeek();
     }
 
