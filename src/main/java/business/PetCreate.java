@@ -1,4 +1,4 @@
-package controls;
+package business;
 
 import models.Category;
 import models.Pet;

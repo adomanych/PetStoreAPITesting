@@ -1,7 +1,7 @@
 package io.swagger.petstore;
 
-import controls.PetCreate;
-import controls.PetUpdate;
+import business.PetCreate;
+import business.PetUpdate;
 import io.restassured.response.Response;
 import client.pet.PetServices;
 import models.Pet;

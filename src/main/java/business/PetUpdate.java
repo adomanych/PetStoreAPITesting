@@ -1,4 +1,4 @@
-package controls;
+package business;
 
 import models.Pet;
 import org.apache.commons.lang3.RandomStringUtils;

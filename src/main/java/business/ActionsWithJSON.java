@@ -1,4 +1,4 @@
-package controls;
+package business;
 
 import com.google.gson.Gson;
 import io.restassured.response.Response;

@@ -1,7 +1,7 @@
 package client.pet;
 
 import client.BaseSetUp;
-import controls.ActionsWithJSON;
+import business.ActionsWithJSON;
 import io.restassured.response.Response;
 import models.Pet;
 import org.hamcrest.Matchers;
