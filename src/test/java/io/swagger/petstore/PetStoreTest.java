@@ -3,7 +3,7 @@ package io.swagger.petstore;
 import controls.PetCreate;
 import controls.PetUpdate;
 import io.restassured.response.Response;
-import methodsAPI.PetServices;
+import client.pet.PetServices;
 import models.Pet;
 import org.junit.jupiter.api.*;
 

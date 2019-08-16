@@ -2,7 +2,7 @@ package controls;
 
 import com.google.gson.Gson;
 import io.restassured.response.Response;
-import methodsAPI.PetServices;
+import client.pet.PetServices;
 import models.Pet;
 
 public class ActionsWithJSON {

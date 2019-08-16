@@ -1,6 +1,6 @@
-package methodsAPI;
+package client.pet;
 
-import BaseSet.BaseSetUp;
+import client.BaseSetUp;
 import controls.ActionsWithJSON;
 import io.restassured.response.Response;
 import models.Pet;
