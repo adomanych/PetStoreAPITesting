@@ -1,32 +1,34 @@
 package io.swagger.petstore;
 
+import asertions.petAssertions.PetAssert;
 import business.PetCreate;
 import business.PetUpdate;
 import io.restassured.response.Response;
 import client.pet.PetServices;
-import models.Pet;
+import models.PetModel;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class PetStoreTest extends PetServices {
-    private static Pet testPetOne;
-    private Pet testPetTwo;
+    private static PetModel testPetOne;
+    //private static PetAssert petAssert;
+    private PetModel testPetTwo;
 
 
     @BeforeAll
     public static void setUp() {
         System.out.println("Before all");
         testPetOne = new PetCreate().createPet();
-
     }
 
     @Test
     @Order(1)
     public void addNewPetTest() {
         Response response = addNewPet(testPetOne);
-        assertEquals(200, response.getStatusCode());
+        PetModel petone = response.getBody().as(PetModel.class);
+        PetAssert.assertThat(petone).isEqualTo(testPetOne);
     }
 
     @Test
@@ -39,8 +41,9 @@ public class PetStoreTest extends PetServices {
     @Test
     @Order(5)
     public void getPetByStatusTest() {
-        Response response = getPetByStatus(Pet.Status.PENDING.getValue());
+        Response response = getPetByStatus(PetModel.Status.PENDING.getValue());
         assertEquals(200, response.getStatusCode());
+
     }
 
     @Test

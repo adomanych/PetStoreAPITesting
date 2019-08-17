@@ -1,8 +1,8 @@
 package business;
 
-import models.Category;
-import models.Pet;
-import models.TagsItems;
+import models.CategoryModel;
+import models.PetModel;
+import models.TagsItemsModel;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import java.util.Collections;
@@ -10,18 +10,18 @@ import java.util.Collections;
 public class PetCreate {
     private int id = Integer.parseInt(RandomStringUtils.randomNumeric(6));
     private String name = RandomStringUtils.randomAlphabetic(7);
-    private Pet pet;
+    private PetModel pet;
 
-    public Pet createPet() {
-        pet = Pet.builder()
+    public PetModel createPet() {
+        pet = PetModel.builder()
                 .id(id)
-                .category(Category.builder()
+                .category(CategoryModel.builder()
                         .id(id)
                         .name(name)
                         .build())
                 .name(name)
                 .photoUrls(Collections.singletonList(RandomStringUtils.randomAlphabetic(10)))
-                .tagsItems(Collections.singletonList(TagsItems.builder()
+                .tagsItems(Collections.singletonList(TagsItemsModel.builder()
                         .id(id)
                         .name(name)
                         .build())

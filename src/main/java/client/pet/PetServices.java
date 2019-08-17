@@ -3,7 +3,7 @@ package client.pet;
 import client.BaseSetUp;
 import business.ActionsWithJSON;
 import io.restassured.response.Response;
-import models.Pet;
+import models.PetModel;
 import org.hamcrest.Matchers;
 
 import static io.restassured.RestAssured.given;
@@ -12,7 +12,7 @@ public class PetServices extends BaseSetUp {
     private ActionsWithJSON actions;
     private final String petUrl = "/v2/pet/";
 
-    protected Response addNewPet(Pet pet) {
+    protected Response addNewPet(PetModel pet) {
         return given(createRequest())
                 .body(actions.formatToJSon(pet))
                 .post(petUrl)
@@ -35,7 +35,7 @@ public class PetServices extends BaseSetUp {
                 .extract().response().prettyPeek();
     }
 
-    protected Response updatePet(Pet pet) {
+    protected Response updatePet(PetModel pet) {
         return given(createRequest())
                 .body(actions.formatToJSon(pet))
                 .put(petUrl)
