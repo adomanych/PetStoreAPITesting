@@ -1,4 +1,4 @@
-package business;
+package builder;
 
 import models.CategoryModel;
 import models.PetModel;
@@ -7,9 +7,10 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 import java.util.Collections;
 
-public class PetCreate {
+public class PetCreateBuilder {
     private int id = Integer.parseInt(RandomStringUtils.randomNumeric(6));
     private String name = RandomStringUtils.randomAlphabetic(7);
+    private String status = PetModel.Status.PENDING.getValue();
     private PetModel pet;
 
     public PetModel createPet() {
@@ -26,7 +27,7 @@ public class PetCreate {
                         .name(name)
                         .build())
                 )
-                .status("avaliable")
+                .status(status)
                 .build();
         return pet;
     }

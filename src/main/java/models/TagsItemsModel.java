@@ -27,7 +27,7 @@ public class TagsItemsModel {
         }
         TagsItemsModel tagsItemsModel = (TagsItemsModel) o;
         rezult = id == tagsItemsModel.getId() &&
-                 name == tagsItemsModel.getName();
+                 name.equals(tagsItemsModel.getName());
         return rezult;
     }
 }
