@@ -42,23 +42,23 @@ public class PetStoreTest extends PetServices {
         BaseAssert.baseAssertWith200StatusCode(response);
         PetAssert.assertThat(PetFromJsonBL.fromJson(response)).isEqualTo(testPetOne);
 
-        System.out.println(" updatePetTest");
+
         testPetTwo = PetUpdateBL.doUpdate(PetFromJsonBL.fromJson(response));
         response = updatePet(testPetTwo);
         BaseAssert.baseAssertWith200StatusCode(response);
-        PetAssert.assertThat(response.getBody().as(PetModel.class))
+        PetAssert.assertThat(PetFromJsonBL.fromJson(response))
                 .hasId(testPetTwo.getId())
                 .hasCategory(testPetTwo.getCategory())
                 .assertAll();
 
-        System.out.println(" deletePetTest");
+
         response = deletePet(testPetOne.getId());
         BaseAssert.baseAssertWith200StatusCode(response);
 
     }
 
 
-    @Test(priority = 5)
+    @Test
     public void getPetByStatusTest() {
         Response response = getPetByStatus(PetModel.Status.SOLD.getValue());
         petModelList = new ArrayList<>();
