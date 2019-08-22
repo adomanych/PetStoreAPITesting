@@ -1,10 +1,10 @@
-package builder;
+package builders;
 
-import business.OrderBL.GetDate;
+import util.GetDate;
 import models.OrderModel;
 import org.apache.commons.lang3.RandomStringUtils;
 
-public class OrderCreateBulilder {
+public class OrderCreateBulilders {
     private int id = Integer.parseInt(RandomStringUtils.randomNumeric(6));
     private int quantity = Integer.parseInt(RandomStringUtils.randomNumeric(1));
     private String status = OrderModel.Status.DELIVERED.getValue();

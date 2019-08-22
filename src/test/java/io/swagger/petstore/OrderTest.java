@@ -1,53 +1,34 @@
 package io.swagger.petstore;
 
-import asertions.BaseAssert;
-import asertions.orderAssertions.OrderAssert;
-import builder.OrderCreateBulilder;
-import builder.PetCreateBuilder;
-import business.OrderBL.OrderFromJson;
-import client.orderCient.OrderServices;
-import client.petClient.PetServices;
-import io.restassured.response.Response;
+import builders.OrderCreateBulilders;
+import builders.PetCreateBuilders;
+import business.OrderBL;
 import models.OrderModel;
 import models.PetModel;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class OrderTest {
 
-    private static OrderModel testOrderOne;
-    private static PetModel testPetModel;
-    private static OrderServices orderServices;
-    private static PetServices petServices;
-    private Response response;
+    private OrderModel testOrderOne;
+    private PetModel testPetModel;
+    private OrderBL orderBL;
 
 
-    @BeforeSuite
-    public static void setUp() {
-        petServices = new PetServices();
-        testPetModel = new PetCreateBuilder().createPet();
-        testOrderOne = new OrderCreateBulilder().createNewOreder(testPetModel.getId());
-        orderServices = new OrderServices();
+    @BeforeClass
+    public void setUp() {
+        orderBL = new OrderBL();
+        testPetModel = new PetCreateBuilders().createPet();
+        testOrderOne = new OrderCreateBulilders().createNewOreder(testPetModel.getId());
+
     }
+
     @Test
-    public void getPetInventory() {
-        petServices.addNewPet(testPetModel);
-        response = orderServices.getInventories();
-        BaseAssert.baseAssertWith200StatusCode(response);
-
-        response = orderServices.postOrder(testOrderOne);
-        BaseAssert.baseAssertWith200StatusCode(response);
-        OrderAssert.areEquals(OrderFromJson.fromJson(response), testOrderOne);
-
-        response = orderServices.getByOrderID(testOrderOne.getId());
-        BaseAssert.baseAssertWith200StatusCode(response);
-        OrderAssert.areEquals(OrderFromJson.fromJson(response), testOrderOne);
-
-        response = orderServices.deleteOrder(testOrderOne.getId());
-        BaseAssert.baseAssertWith200StatusCode(response);
-
-        petServices.deletePet(testPetModel.getId());
-
+    public void orderTest() {
+        orderBL.getInventoriesTest( 200);
+        orderBL.postOrderTest(testOrderOne,200);
+        orderBL.deleteOrderTest(testOrderOne, 200);
+        orderBL.getByOrderIDTest(testOrderOne,404);
     }
 
 

@@ -1,72 +1,71 @@
 package io.swagger.petstore;
 
-import asertions.BaseAssert;
-import asertions.petAssertions.PetAssert;
-import builder.PetCreateBuilder;
-import business.petBL.PetFromJsonBL;
-import business.petBL.PetUpdateBL;
-import client.petClient.PetServices;
-import io.restassured.response.Response;
+import builders.FailPetCreateBuilders;
+import builders.PetCreateBuilders;
+import business.PetBL;
+import clients.PetClients;
+import failModels.PetFailModel;
 import models.PetModel;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 
-public class PetStoreTest extends PetServices {
-    private static PetModel testPetOne;
-    private PetModel testPetTwo;
+public class PetStoreTest extends PetClients {
+
     private List<PetModel> petModelList;
-    private Response response;
+    private PetModel testPetOne;
+    private PetBL petBL;
 
 
-    @BeforeSuite
-    public static void setUp() {
-        System.out.println("Before all");
-        testPetOne = new PetCreateBuilder().createPet();
+    @BeforeClass
+    public void setUp() {
+        testPetOne = new PetCreateBuilders().createPet();
+        petBL = new PetBL();
+
+        //  petBL = new PetBL(testPetOne);
 
     }
 
     @Test
-    public void testCycle() {
-        response = addNewPet(testPetOne);
-        BaseAssert.baseAssertWith200StatusCode(response);
-        PetAssert.assertThat(PetFromJsonBL.fromJson(response))
-                .isEqualTo(testPetOne)
-                .assertAll();
+    public void petTest() {
+        petBL.addPetTest(testPetOne, 200);
+        petBL.getPetByIDTest(testPetOne, 200);
+        petBL.updatePetTest(testPetOne, 200);
+        petBL.deletePetTest(testPetOne, 200);
+        petBL.getPetByIDTest(testPetOne, 404);
 
-        response = getPetByID(testPetOne.getId());
-        BaseAssert.baseAssertWith200StatusCode(response);
-        PetAssert.assertThat(PetFromJsonBL.fromJson(response)).isEqualTo(testPetOne);
-
-
-        testPetTwo = PetUpdateBL.doUpdate(PetFromJsonBL.fromJson(response));
-        response = updatePet(testPetTwo);
-        BaseAssert.baseAssertWith200StatusCode(response);
-        PetAssert.assertThat(PetFromJsonBL.fromJson(response))
-                .hasId(testPetTwo.getId())
-                .hasCategory(testPetTwo.getCategory())
-                .assertAll();
+    }
+    @Test
+    public void uploadImage() {
+        petBL.uploadImageTest(testPetOne, 200);
+    }
 
 
-        response = deletePet(testPetOne.getId());
-        BaseAssert.baseAssertWith200StatusCode(response);
 
+    @Test
+    public void getInvalidPet() {
+        petBL.getPetByIDTest(testPetOne, 404);
+    }
+
+    @Test(expectedExceptions = AssertionError.class)//?
+    public void deleteNotPresentPet() {
+        petBL.deletePetTest(testPetOne, 404);
     }
 
 
     @Test
-    public void getPetByStatusTest() {
-        Response response = getPetByStatus(PetModel.Status.SOLD.getValue());
-        petModelList = new ArrayList<>();
-        petModelList = Arrays.asList(response.as(PetModel[].class));
-        BaseAssert.baseAssertWith200StatusCode(response);
-        System.out.println(petModelList.get(0));
-
+    public void addPetWithInvalidData() {
+        PetFailModel petFailModel = new FailPetCreateBuilders().createFailPet();
+        petBL.addPetTest(petFailModel, 500);
     }
+
+    @Test
+    public void getPetByStatus() {//?
+        petBL.getPetByStatusTest("ale", 200);
+    }
+
 }
 
 

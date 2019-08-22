@@ -1,4 +1,4 @@
-package builder;
+package builders;
 
 import models.CategoryModel;
 import models.PetModel;
@@ -7,7 +7,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 import java.util.Collections;
 
-public class PetCreateBuilder {
+public class PetCreateBuilders {
     private int id = Integer.parseInt(RandomStringUtils.randomNumeric(6));
     private String name = RandomStringUtils.randomAlphabetic(7);
     private String status = PetModel.Status.PENDING.getValue();
