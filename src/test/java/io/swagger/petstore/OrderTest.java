@@ -25,10 +25,10 @@ public class OrderTest {
 
     @Test
     public void orderTest() {
-        orderBL.getInventoriesTest( 200);
-        orderBL.postOrderTest(testOrderOne,200);
-        orderBL.deleteOrderTest(testOrderOne, 200);
-        orderBL.getByOrderIDTest(testOrderOne,404);
+        orderBL.getInventoriesTest();
+        orderBL.postOrderTest(testOrderOne);
+        orderBL.deleteOrderTest(testOrderOne);
+        orderBL.getOrderByInvalidId(testOrderOne);
     }
 
 

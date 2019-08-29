@@ -9,7 +9,7 @@ import java.io.File;
 
 import static io.restassured.RestAssured.given;
 
-public class PetClients<T> extends BaseSetUp{
+public class PetClients extends BaseSetUp{
 
 
     public PetClients() {

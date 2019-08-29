@@ -1,0 +1,9 @@
+<suite name="TestSuite">
+    <test name="AutoQA">
+        <classes>
+            <class name="io.swagger.petstore.OrderTest" />
+            <class name="io.swagger.petstore.PetStoreTest"/>
+            <class name="io.swagger.petstore.UserTest"/>
+        </classes>
+    </test>
+</suite>

@@ -9,12 +9,10 @@ import models.PetModel;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.util.List;
-
 
 public class PetStoreTest extends PetClients {
 
-    private List<PetModel> petModelList;
+
     private PetModel testPetOne;
     private PetBL petBL;
 
@@ -24,46 +22,44 @@ public class PetStoreTest extends PetClients {
         testPetOne = new PetCreateBuilders().createPet();
         petBL = new PetBL();
 
-        //  petBL = new PetBL(testPetOne);
-
     }
 
     @Test
     public void petTest() {
-        petBL.addPetTest(testPetOne, 200);
-        petBL.getPetByIDTest(testPetOne, 200);
-        petBL.updatePetTest(testPetOne, 200);
-        petBL.deletePetTest(testPetOne, 200);
-        petBL.getPetByIDTest(testPetOne, 404);
+        petBL.addPetTest(testPetOne);
+        petBL.getPetByValidIDTest(testPetOne);
+        petBL.updatePetTest(testPetOne);
+        petBL.deletePresentPetTest(testPetOne);
+        petBL.getPetByInvalIDTest(testPetOne);
 
     }
     @Test
     public void uploadImage() {
-        petBL.uploadImageTest(testPetOne, 200);
+        petBL.uploadImageTest(testPetOne);
     }
 
 
 
     @Test
     public void getInvalidPet() {
-        petBL.getPetByIDTest(testPetOne, 404);
+        petBL.getPetByInvalIDTest(testPetOne);
     }
 
-    @Test(expectedExceptions = AssertionError.class)//?
+    @Test//(expectedExceptions = AssertionError.class)//?
     public void deleteNotPresentPet() {
-        petBL.deletePetTest(testPetOne, 404);
+        petBL.deleteNotPresentPet(testPetOne);
     }
 
 
     @Test
     public void addPetWithInvalidData() {
         PetFailModel petFailModel = new FailPetCreateBuilders().createFailPet();
-        petBL.addPetTest(petFailModel, 500);
+        petBL.addPetWithInvalidDataTest(petFailModel);
     }
 
     @Test
-    public void getPetByStatus() {//?
-        petBL.getPetByStatusTest("ale", 200);
+    public void getPetByStatus() {
+        petBL.getPetByStatusTest("sold");
     }
 
 }
