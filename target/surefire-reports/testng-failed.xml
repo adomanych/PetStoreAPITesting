@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite]" verbose="0">
+  <test thread-count="5" parallel="methods" name="AutoQA(failed)" verbose="0">
+    <classes>
+      <class name="io.swagger.petstore.UserTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="TestLoginAndLogoutUser"/>
+          <include name="firstTest"/>
+          <include name="addArrayOfUserTest"/>
+          <include name="UpdateUserTest"/>
+          <include name="addListOfUserstest"/>
+        </methods>
+      </class> <!-- io.swagger.petstore.UserTest -->
+      <class name="io.swagger.petstore.PetStoreTest">
+        <methods>
+          <include name="addPetWithInvalidData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- io.swagger.petstore.PetStoreTest -->
+    </classes>
+  </test> <!-- AutoQA(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

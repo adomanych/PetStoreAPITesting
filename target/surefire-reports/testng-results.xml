@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="6" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-09-09T09:18:35 EEST" name="TestSuite" finished-at="2019-09-09T09:18:48 EEST" duration-ms="12975">
+    <groups>
+    </groups>
+    <test started-at="2019-09-09T09:18:35 EEST" name="AutoQA" finished-at="2019-09-09T09:18:48 EEST" duration-ms="12975">
+      <class name="io.swagger.petstore.OrderTest">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:io.swagger.petstore.OrderTest@2d6aca33]" started-at="2019-09-09T09:18:35 EEST" name="setUp" finished-at="2019-09-09T09:18:35 EEST" duration-ms="62" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@63718b93]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="orderTest()[pri:0, instance:io.swagger.petstore.OrderTest@2d6aca33]" started-at="2019-09-09T09:18:35 EEST" name="orderTest" finished-at="2019-09-09T09:18:40 EEST" duration-ms="4971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderTest -->
+      </class> <!-- io.swagger.petstore.OrderTest -->
+      <class name="io.swagger.petstore.UserTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:io.swagger.petstore.UserTest@29314cc9]" started-at="2019-09-09T09:18:46 EEST" name="setUp" finished-at="2019-09-09T09:18:46 EEST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TestLoginAndLogoutUser()[pri:0, instance:io.swagger.petstore.UserTest@29314cc9]" started-at="2019-09-09T09:18:46 EEST" name="TestLoginAndLogoutUser" finished-at="2019-09-09T09:18:46 EEST" duration-ms="375" status="FAIL">
+          <exception class="com.fasterxml.jackson.databind.exc.MismatchedInputException">
+            <message>
+              <![CDATA[No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4145)
+at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3042)
+at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:221)
+at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:58)
+at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:224)
+at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+at business.UserBL.addNewUserTest(UserBL.java:56)
+at io.swagger.petstore.UserTest.TestLoginAndLogoutUser(UserTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.fasterxml.jackson.databind.exc.MismatchedInputException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLoginAndLogoutUser -->
+        <test-method signature="UpdateUserTest()[pri:0, instance:io.swagger.petstore.UserTest@29314cc9]" started-at="2019-09-09T09:18:46 EEST" name="UpdateUserTest" finished-at="2019-09-09T09:18:46 EEST" duration-ms="375" status="FAIL">
+          <exception class="com.fasterxml.jackson.databind.exc.MismatchedInputException">
+            <message>
+              <![CDATA[No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4145)
+at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3042)
+at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:221)
+at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:58)
+at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:224)
+at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+at business.UserBL.addNewUserTest(UserBL.java:56)
+at io.swagger.petstore.UserTest.UpdateUserTest(UserTest.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.fasterxml.jackson.databind.exc.MismatchedInputException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUserTest -->
+        <test-method signature="addArrayOfUserTest()[pri:0, instance:io.swagger.petstore.UserTest@29314cc9]" started-at="2019-09-09T09:18:46 EEST" name="addArrayOfUserTest" finished-at="2019-09-09T09:18:47 EEST" duration-ms="320" status="FAIL">
+          <exception class="com.fasterxml.jackson.databind.exc.MismatchedInputException">
+            <message>
+              <![CDATA[No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4145)
+at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3042)
+at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:221)
+at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:58)
+at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:224)
+at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+at business.UserBL.addArrayOfUsersTest(UserBL.java:70)
+at io.swagger.petstore.UserTest.addArrayOfUserTest(UserTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.fasterxml.jackson.databind.exc.MismatchedInputException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addArrayOfUserTest -->
+        <test-method signature="addListOfUserstest()[pri:0, instance:io.swagger.petstore.UserTest@29314cc9]" started-at="2019-09-09T09:18:47 EEST" name="addListOfUserstest" finished-at="2019-09-09T09:18:47 EEST" duration-ms="329" status="FAIL">
+          <exception class="com.fasterxml.jackson.databind.exc.MismatchedInputException">
+            <message>
+              <![CDATA[No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4145)
+at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3042)
+at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:221)
+at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:58)
+at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:224)
+at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+at business.UserBL.addListOfUsersTest(UserBL.java:81)
+at io.swagger.petstore.UserTest.addListOfUserstest(UserTest.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.fasterxml.jackson.databind.exc.MismatchedInputException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListOfUserstest -->
+        <test-method signature="firstTest()[pri:0, instance:io.swagger.petstore.UserTest@29314cc9]" started-at="2019-09-09T09:18:47 EEST" name="firstTest" finished-at="2019-09-09T09:18:48 EEST" duration-ms="514" status="FAIL">
+          <exception class="com.fasterxml.jackson.databind.exc.MismatchedInputException">
+            <message>
+              <![CDATA[No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4145)
+at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3042)
+at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:221)
+at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:58)
+at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:224)
+at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+at business.UserBL.addNewUserTest(UserBL.java:56)
+at io.swagger.petstore.UserTest.firstTest(UserTest.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.fasterxml.jackson.databind.exc.MismatchedInputException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTest -->
+      </class> <!-- io.swagger.petstore.UserTest -->
+      <class name="io.swagger.petstore.PetStoreTest">
+        <test-method signature="addPetWithInvalidData()[pri:0, instance:io.swagger.petstore.PetStoreTest@21ab988f]" started-at="2019-09-09T09:18:40 EEST" name="addPetWithInvalidData" finished-at="2019-09-09T09:18:41 EEST" duration-ms="578" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+StatusCode isn't equals expected [200] but found [500]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+StatusCode isn't equals expected [200] but found [500]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at asertions.BaseAssertions.baseAssert(BaseAssertions.java:20)
+at business.PetBL.addPetWithInvalidDataTest(PetBL.java:71)
+at io.swagger.petstore.PetStoreTest.addPetWithInvalidData(PetStoreTest.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPetWithInvalidData -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:io.swagger.petstore.PetStoreTest@21ab988f]" started-at="2019-09-09T09:18:40 EEST" name="setUp" finished-at="2019-09-09T09:18:40 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteNotPresentPet()[pri:0, instance:io.swagger.petstore.PetStoreTest@21ab988f]" started-at="2019-09-09T09:18:41 EEST" name="deleteNotPresentPet" finished-at="2019-09-09T09:18:41 EEST" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNotPresentPet -->
+        <test-method signature="getInvalidPet()[pri:0, instance:io.swagger.petstore.PetStoreTest@21ab988f]" started-at="2019-09-09T09:18:41 EEST" name="getInvalidPet" finished-at="2019-09-09T09:18:41 EEST" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInvalidPet -->
+        <test-method signature="getPetByStatus()[pri:0, instance:io.swagger.petstore.PetStoreTest@21ab988f]" started-at="2019-09-09T09:18:41 EEST" name="getPetByStatus" finished-at="2019-09-09T09:18:42 EEST" duration-ms="522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPetByStatus -->
+        <test-method signature="petTest()[pri:0, instance:io.swagger.petstore.PetStoreTest@21ab988f]" started-at="2019-09-09T09:18:42 EEST" name="petTest" finished-at="2019-09-09T09:18:45 EEST" duration-ms="2533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- petTest -->
+        <test-method signature="uploadImage()[pri:0, instance:io.swagger.petstore.PetStoreTest@21ab988f]" started-at="2019-09-09T09:18:45 EEST" name="uploadImage" finished-at="2019-09-09T09:18:46 EEST" duration-ms="909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadImage -->
+      </class> <!-- io.swagger.petstore.PetStoreTest -->
+    </test> <!-- AutoQA -->
+  </suite> <!-- TestSuite -->
+</testng-results>

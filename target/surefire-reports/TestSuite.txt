@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 15.256 s <<< FAILURE! - in TestSuite
+addPetWithInvalidData(io.swagger.petstore.PetStoreTest)  Time elapsed: 0.657 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	StatusCode isn't equals expected [200] but found [500]
+	at io.swagger.petstore.PetStoreTest.addPetWithInvalidData(PetStoreTest.java:62)
+
+TestLoginAndLogoutUser(io.swagger.petstore.UserTest)  Time elapsed: 0.391 s  <<< FAILURE!
+com.fasterxml.jackson.databind.exc.MismatchedInputException: 
+No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+	at io.swagger.petstore.UserTest.TestLoginAndLogoutUser(UserTest.java:41)
+
+UpdateUserTest(io.swagger.petstore.UserTest)  Time elapsed: 0.406 s  <<< FAILURE!
+com.fasterxml.jackson.databind.exc.MismatchedInputException: 
+No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+	at io.swagger.petstore.UserTest.UpdateUserTest(UserTest.java:50)
+
+addArrayOfUserTest(io.swagger.petstore.UserTest)  Time elapsed: 0.367 s  <<< FAILURE!
+com.fasterxml.jackson.databind.exc.MismatchedInputException: 
+No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+	at io.swagger.petstore.UserTest.addArrayOfUserTest(UserTest.java:31)
+
+addListOfUserstest(io.swagger.petstore.UserTest)  Time elapsed: 0.344 s  <<< FAILURE!
+com.fasterxml.jackson.databind.exc.MismatchedInputException: 
+No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+	at io.swagger.petstore.UserTest.addListOfUserstest(UserTest.java:36)
+
+firstTest(io.swagger.petstore.UserTest)  Time elapsed: 0.53 s  <<< FAILURE!
+com.fasterxml.jackson.databind.exc.MismatchedInputException: 
+No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+	at io.swagger.petstore.UserTest.firstTest(UserTest.java:25)
+
