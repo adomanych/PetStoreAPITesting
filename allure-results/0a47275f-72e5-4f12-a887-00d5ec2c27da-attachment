@@ -1,0 +1,41 @@
+DEBUG Request method:	POST
+Request URI:	http://petstore.swagger.io/v2/user/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"firstName":"tFZmRhZC","lastName":"MuKvHcXV","password":"IZnTCJ","userStatus":4,"phone":"+3809616481","id":323357,"email":"BWIOyK@gmail.com","username":"ijOnWP"}
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/store/order/852834
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/pet/482203
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+

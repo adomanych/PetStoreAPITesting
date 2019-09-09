@@ -1,5 +1,5 @@
 <suite name="TestSuite">
-    <test name="AutoQA">
+    <test name="AutoQA" parallel="methods" thread-count="1">
         <classes>
             <class name="io.swagger.petstore.OrderTest" />
             <class name="io.swagger.petstore.PetStoreTest"/>

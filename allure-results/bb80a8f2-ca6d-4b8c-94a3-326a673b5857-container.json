@@ -1,0 +1,1 @@
+{"uuid":"bb80a8f2-ca6d-4b8c-94a3-326a673b5857","name":"io.swagger.petstore.OrderTest","children":["7c1707bf-23e4-4588-8c71-bf271c729390"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1567518345869,"stop":1567518345909}],"afters":[],"links":[],"start":1567518345793,"stop":1567518351331}

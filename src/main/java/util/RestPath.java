@@ -9,4 +9,8 @@ public class RestPath {
     public static final String orderPostPath = "order/";
     public static final String userLoginpath = "login?username={username}&password={password}";
     public static  final String userLogout = "logout";
+
+
+    //Path for folder
+    public static final String filePath = "D:\\TAQC\\Algoritm\\ioswaggerpetstore\\Report\\";
 }

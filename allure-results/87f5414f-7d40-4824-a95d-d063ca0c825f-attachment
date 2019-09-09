@@ -1,0 +1,15 @@
+DEBUG Request method:	POST
+Request URI:	http://petstore.swagger.io/v2/user/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"firstName":"FVPVvqPI","lastName":"yxNcaLyT","password":"scCplO","userStatus":5,"phone":"+3802343911","id":465058,"email":"SfYqNi@gmail.com","username":"QAnrOJ"}
+

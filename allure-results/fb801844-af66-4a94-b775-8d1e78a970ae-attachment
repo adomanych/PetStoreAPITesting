@@ -1,0 +1,92 @@
+DEBUG Parsing response as: application/octet-stream
+DEBUG Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG Request method:	POST
+Request URI:	http://petstore.swagger.io/v2/pet/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"id":"sZG","name":670,"status":637}
+HTTP/1.1 500 Server Error
+Date: Tue, 03 Sep 2019 12:51:14 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"code":500,"type":"unknown","message":"something bad happened"}
+Request method:	DELETE
+Request URI:	http://petstore.swagger.io/v2/pet/536923
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Tue, 03 Sep 2019 12:51:15 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+DEBUG Request method:	POST
+Request URI:	http://petstore.swagger.io/v2/pet/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"id":"sZG","name":670,"status":637}
+HTTP/1.1 500 Server Error
+Date: Tue, 03 Sep 2019 12:51:14 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"code":500,"type":"unknown","message":"something bad happened"}
+Request method:	DELETE
+Request URI:	http://petstore.swagger.io/v2/pet/536923
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Tue, 03 Sep 2019 12:51:15 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+

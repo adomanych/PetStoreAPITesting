@@ -1,0 +1,15 @@
+DEBUG Request method:	POST
+Request URI:	http://petstore.swagger.io/v2/pet/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"id":184638,"category":{"id":184638,"name":"bDXdTyK"},"name":"bDXdTyK","photoUrls":["hFetquWqWr"],"tags":[{"id":184638,"name":"bDXdTyK"}],"status":"pending"}
+

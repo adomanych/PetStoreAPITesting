@@ -4,8 +4,11 @@ import builders.UserCreateBuilders;
 import business.UserBL;
 import models.UserModel;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import util.Listener;
 
+@Listeners(Listener.class)
 public class UserTest {
     private UserModel userModel;
     private UserBL userBL;

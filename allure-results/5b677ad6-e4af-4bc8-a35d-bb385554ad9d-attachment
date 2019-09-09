@@ -1,0 +1,470 @@
+DEBUG Parsing response as: application/json
+DEBUG Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG Parsing response as: application/json
+DEBUG Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG Parsing response as: application/json
+DEBUG Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG Parsing response as: application/json
+DEBUG Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG Parsing response as: application/json
+DEBUG Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG Parsing response as: application/json
+DEBUG Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG Request method:	POST
+Request URI:	http://petstore.swagger.io/v2/pet/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"id":"sZG","name":670,"status":637}
+HTTP/1.1 500 Server Error
+Date: Tue, 03 Sep 2019 12:51:14 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"code":500,"type":"unknown","message":"something bad happened"}
+Request method:	DELETE
+Request URI:	http://petstore.swagger.io/v2/pet/536923
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Tue, 03 Sep 2019 12:51:15 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/pet/536923
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Tue, 03 Sep 2019 12:51:15 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"code":1,"type":"error","message":"Pet not found"}
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/pet/findByStatus?status=sold
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 03 Sep 2019 12:51:15 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+[{"id":9199424981609313756,"name":"doggie","photoUrls":[],"tags":[],"status":"sold"},{"id":9199424981609314168,"name":"doggie","photoUrls":[],"tags":[],"status":"sold"},{"id":9199424981609314252,"name":"doggie","photoUrls":[],"tags":[],"status":"sold"},{"id":11550,"category":{"id":11210,"name":"string2"},"name":"doggie","photoUrls":["string2"],"tags":[{"id":11310,"name":"string3"}],"status":"sold"},{"id":72951,"category":{"id":72951,"name":"Lab123456789"},"name":"doggie","photoUrls":[""],"tags":[{"id":72951,"name":"RandomNames"}],"status":"sold"},{"id":9199424981609314953,"name":"","photoUrls":[],"tags":[{"id":0,"name":"scfsdfa"}],"status":"sold"},{"id":-984,"category":{"id":675,"name":"sep9vcfBhS_yTlw9"},"name":"doggie","photoUrls":["wGIuVU-vLshVjKyB","uccRtPf7ImnXFwN6","y7i3i0nV3MytV8V2","ip7C5QaNeIoz4AZz","Xxp1wsb40ROF06Pp","OdoJX_kYtuxraPyE","_USv3cGoAU8HYd4O","Zf0wq9yu9s4Ox2sg","EtKmYAt_P9d0MgWG","7nOnUlPpiWma5kur"],"tags":[{"id":-972,"name":"AXMJO_g6chPZ8e6W"},{"id":-515,"name":"N2MwQJZ08iFxVVYr"},{"id":-377,"name":"EtYET5_V0EjnmBbB"},{"id":-417,"name":"l-lAvkBbcwGzD7ok"}],"status":"sold"},{"id":9199424981609315569,"name":"doggie","photoUrls":[],"tags":[],"status":"sold"},{"id":1122338468915,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":9199424981609315637,"name":"Charlie","photoUrls":[],"tags":[],"status":"sold"},{"id":9199424981609315739,"name":"cat4","photoUrls":[],"tags":[],"status":"sold"},{"id":9199424981609315759,"category":{"id":0,"name":"string"},"name":"isha","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":9199424981609315746,"category":{"id":0,"name":"string"},"name":"cat5","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":9199424981609315783,"category":{"id":0,"name":"string"},"name":"isha","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":9199424981609315787,"category":{"id":0,"name":"string"},"name":"isha","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":9199424981609315760,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":9199424981609320803,"name":"doggie","photoUrls":[],"tags":[],"status":"sold"},{"id":9199424981609320817,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":3456781,"category":{"id":3456781,"name":"sdfgdf"},"name":"sdfgdf","photoUrls":["string"],"tags":[{"id":3456781,"name":"sdfgdf"}],"status":"sold"},{"id":9199424981609322276,"name":"doggie","photoUrls":[],"tags":[],"status":"sold"},{"id":1122338486467,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338476506,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338442392,"category":{"id":5436,"name":"soaspec_test"},"name":"CharlieAngels","photoUrls":[],"tags":[],"status":"sold"},{"id":1122338476427,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":11111111111,"category":{"id":0,"name":"hepsi"},"name":"kopekkk","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":639587,"category":{"id":12,"name":"jjJakPHFOb"},"name":"perro","photoUrls":["yboRbch"],"tags":[{"id":13,"name":"jjJakPHFOb"}],"status":"sold"},{"id":1122338445947,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338477800,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338498054,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1234987,"category":{"id":1234987,"name":"Jyo"},"name":"Jyo","photoUrls":["string"],"tags":[{"id":1234987,"name":"Jyo"}],"status":"sold"},{"id":3456987,"category":{"id":3456987,"name":"Jyothi"},"name":"Jyothi","photoUrls":["string"],"tags":[{"id":3456987,"name":"Jyothi"}],"status":"sold"},{"id":126754,"category":{"id":126754,"name":"Jyoti"},"name":"Jyoti","photoUrls":["string"],"tags":[{"id":126754,"name":"Jyoti"}],"status":"sold"},{"id":1122338463967,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338423808,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338487365,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338482505,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":842161,"category":{"id":0,"name":""},"name":"eTFFIAo","photoUrls":["hLOmVfPNUe"],"tags":[{"id":0,"name":""}],"status":"sold"},{"id":1122338428978,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":100000,"category":{"id":0,"name":"category1"},"name":"pet1","photoUrls":["url1"],"tags":[{"id":0,"name":"tag1"}],"status":"sold"},{"id":1122338433059,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338445754,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":533695,"category":{"id":0,"name":""},"name":"buddy","photoUrls":["OKmOSnKGrV"],"tags":[{"id":0,"name":""}],"status":"sold"},{"id":131621,"category":{"id":1234,"name":"eyeColor"},"name":"Fluffy","photoUrls":["https://petstore.com/sample/photo1.jpg"],"tags":[{"id":1234,"name":"New York"},{"id":124321,"name":"Jose"}],"status":"sold"},{"id":926660,"category":{"id":1234,"name":"eyeColor"},"name":"Fluffy","photoUrls":["https://petstore.com/sample/photo1.jpg"],"tags":[{"id":1234,"name":"New York"},{"id":124321,"name":"Jose"}],"status":"sold"},{"id":248447,"category":{"id":1234,"name":"eyeColor"},"name":"Fluffy","photoUrls":["https://petstore.com/sample/photo1.jpg"],"tags":[{"id":1234,"name":"New York"},{"id":124321,"name":"Jose"}],"status":"sold"},{"id":305686,"category":{"id":1234,"name":"eyeColor"},"name":"Fluffy","photoUrls":["https://petstore.com/sample/photo1.jpg"],"tags":[{"id":1234,"name":"New York"},{"id":124321,"name":"Jose"}],"status":"sold"},{"id":979941,"category":{"id":1234,"name":"eyeColor"},"name":"Fluffy","photoUrls":["https://petstore.com/sample/photo1.jpg"],"tags":[{"id":1234,"name":"New York"},{"id":124321,"name":"Jose"}],"status":"sold"},{"id":632920,"category":{"id":1234,"name":"eyeColor"},"name":"Fluffy","photoUrls":["https://petstore.com/sample/photo1.jpg"],"tags":[{"id":1234,"name":"New York"},{"id":124321,"name":"Jose"}],"status":"sold"},{"id":1122338495273,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":895889,"category":{"id":12,"name":"qBTYVqHBlo"},"name":"perro","photoUrls":["OuJqZIS"],"tags":[{"id":13,"name":"qBTYVqHBlo"}],"status":"sold"},{"id":712553,"category":{"id":12,"name":"QfzuBcCYrg"},"name":"perro","photoUrls":["lVMjjId"],"tags":[{"id":13,"name":"QfzuBcCYrg"}],"status":"sold"},{"id":857227,"category":{"id":12,"name":"bypAvkAHHT"},"name":"perro","photoUrls":["iXGPbEY"],"tags":[{"id":13,"name":"bypAvkAHHT"}],"status":"sold"},{"id":26814,"category":{"id":12,"name":"bGHzujQmeA"},"name":"perro","photoUrls":["XmhfBMU"],"tags":[{"id":13,"name":"bGHzujQmeA"}],"status":"sold"},{"id":864522,"category":{"id":12,"name":"rbhPPjHhiT"},"name":"perro","photoUrls":["dksBDiS"],"tags":[{"id":13,"name":"rbhPPjHhiT"}],"status":"sold"},{"id":1122338490251,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":10001,"name":"update pet with form","photoUrls":[],"tags":[],"status":"sold"},{"id":29349,"category":{"id":12,"name":"wpxPCqfUnn"},"name":"perro","photoUrls":["eUclHOA"],"tags":[{"id":13,"name":"wpxPCqfUnn"}],"status":"sold"},{"id":1122338459163,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":9199424981609314057,"category":{"id":0,"name":"ABCD"},"name":"doggieUpdated","photoUrls":["SampleImage1.png"],"tags":[{"id":0,"name":"TestTag1"}],"status":"sold"},{"id":92816,"category":{"id":95754,"name":"IXaUsIC"},"name":"BgdCpcX","photoUrls":["BQpqfUY"],"tags":[{"id":68451,"name":"UNGnAgu"}],"status":"sold"},{"id":61810,"category":{"id":71112,"name":"sMZgLtu"},"name":"jfpOnZV","photoUrls":["fHFeKIJ"],"tags":[{"id":10205,"name":"taRkBhy"}],"status":"sold"},{"id":39835,"category":{"id":44753,"name":"vyXZakq"},"name":"vhhrToZ","photoUrls":["CEmJnOv"],"tags":[{"id":92812,"name":"UgtRuQd"}],"status":"sold"},{"id":46154,"category":{"id":83975,"name":"GZnHtpb"},"name":"YaKZIhC","photoUrls":["uMgvDuY"],"tags":[{"id":74501,"name":"pXQQCxD"}],"status":"sold"},{"id":1234567890,"name":"Molly","photoUrls":[],"tags":[],"status":"sold"},{"id":998877,"name":"","photoUrls":[],"tags":[{"id":112345,"name":"LolaTest029"}],"status":"sold"},{"id":9199424981609313405,"category":{"id":0,"name":"string"},"name":"cattie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":1602,"category":{"id":101,"name":"testcategory"},"name":"valueimplcat","photoUrls":["a.png","b.png"],"tags":[{"id":102,"name":"testtag1"},{"id":103,"name":"testtag2"}],"status":"sold"},{"id":15435006001660,"category":{"id":2432432,"name":"category_name"},"name":"5239423","photoUrls":["test URL"],"tags":[{"id":5,"name":"fact tag"}],"status":"sold"},{"id":1122338459294,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":819,"category":{"id":762,"name":"Pth9plf0cNvYBDNe"},"name":"doggie","photoUrls":["jsofuEU7kqxpPTZT"],"tags":[{"id":139,"name":"QDfnBd5LeWua3n-Q"}],"status":"sold"},{"id":140,"category":{"id":737,"name":"hnDqvLReBChiev-e"},"name":"doggie","photoUrls":["ggBA9J7wb5iDmG1s"],"tags":[{"id":670,"name":"dBhhkoDLdQtNTxvm"}],"status":"sold"},{"id":413,"category":{"id":71,"name":"zeqbnGlmOtZxhPCV"},"name":"doggie","photoUrls":["7OTkjnpXfK6qRcXd"],"tags":[{"id":31,"name":"rlnhHZIGyN29X4km"}],"status":"sold"},{"id":121,"category":{"id":10,"name":"WNNiemiYVw-k14Lt"},"name":"doggie","photoUrls":["qDGUlMsiiLduB1H1"],"tags":[{"id":84,"name":"RoKKxRN8nQxqE4HE"}],"status":"sold"},{"id":920,"category":{"id":843,"name":"BE4LxsOLA1-I0GsT"},"name":"doggie","photoUrls":["dA2VAoJnTNaQ1RVu"],"tags":[{"id":732,"name":"TINFOILLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL"}],"status":"sold"},{"id":590,"category":{"id":337,"name":"r7Pxb6KHXm2v5zHC"},"name":"doggie","photoUrls":["87lZheIQIng05RL2"],"tags":[{"id":690,"name":"<?xml version=\"1.0\"?>\n<!DOCTYPE tinfoil [<!ENTITY external SYSTEM \"https://test-api-appliance.tinfoil.co/scanner_phone_home/444c0cd7-8972-48a5-b934-af37eee353bd\">]>\n<tinfoil>&external;</tinfoil>}\n"}],"status":"sold"},{"id":289,"category":{"id":37,"name":"Pp8Wqc2ErcJuHt-8"},"name":"doggie","photoUrls":["mPShNq2qpWbkz74P"],"tags":[{"id":866,"name":"-spW6C--ZFSbPKEf"}],"status":"sold"},{"id":519,"category":{"id":834,"name":"q3IQoiEhkC2ThD62"},"name":"doggie","photoUrls":["TmwtAQA0d3Wp-j2x"],"tags":[{"id":625,"name":"4VNzF5Xk_opw37FQ)"}],"status":"sold"},{"id":259,"category":{"id":468,"name":"BPLgWYZcNiwcHjjV"},"name":"doggie","photoUrls":["tRPudAM8J-JwyLrs"],"tags":[{"id":15,"name":"y1XA4FtOHJCqcBOg)"}],"status":"sold"},{"id":101,"category":{"id":920,"name":"G4xmun_fnNwVq4hF"},"name":"doggie","photoUrls":["1XveRO5g3gzQwGjX"],"tags":[{"id":710,"name":"\nhttps://test-api-appliance.tinfoil.co/scanner_phone_home/25be252c-19e6-445c-a6b1-42aab71ee069"}],"status":"sold"},{"id":445,"category":{"id":907,"name":"-Kb-9u9rz5Ac1amt"},"name":"doggie","photoUrls":["dlpGahqe_uPwUHuw"],"tags":[{"id":500,"name":"8mAQQSupKWixj9Sy"}],"status":"sold"},{"id":468,"category":{"id":26,"name":"WmW7Ou3jo809nkF9"},"name":"doggie","photoUrls":["rtsly7f2KvhYy554"],"tags":[{"id":3,"name":"nMnvvnlNPwi6Lcvv"}],"status":"sold"},{"id":320,"category":{"id":287,"name":"9ALFlYn_XYxB2XFn"},"name":"doggie","photoUrls":["_STGjD3uuWpdQUsz"],"tags":[{"id":932,"name":"cnY2vX19exeSeKEE` type %SystemRoot%\\\\win.ini`"}],"status":"sold"},{"id":705,"category":{"id":476,"name":"yTP-DH6g0bCvo-Oo"},"name":"doggie","photoUrls":["cUgTdExdV_Td_uQv"],"tags":[{"id":39,"name":"7S4LLzQsdiQxX-dN"}],"status":"sold"},{"id":870,"category":{"id":636,"name":"PG0Y3KsROCW1ni4w"},"name":"doggie","photoUrls":["1gR9JCXVCHmxHzmU"],"tags":[{"id":69,"name":"o_LT_4qekq1XzHSy"}],"status":"sold"},{"id":272,"category":{"id":378,"name":"LUx2HoQr0AkDNr4c"},"name":"doggie","photoUrls":["mqmRZBl2Qz59x3ah"],"tags":[{"id":555,"name":"S9Oc0FzOI9CJGO1m` type %SystemRoot%\\\\win.ini`"}],"status":"sold"},{"id":328,"category":{"id":1016,"name":"ykxtJ7YSNwKa05Bo"},"name":"doggie","photoUrls":["nEfB484oh3jzt4J9"],"tags":[{"id":231,"name":"\nhttps://test-api-appliance.tinfoil.co/scanner_phone_home/3c39e951-649a-4d8e-89ec-e202589d06dc"}],"status":"sold"},{"id":700,"category":{"id":492,"name":"8OL9skwzEHfXEUGl"},"name":"doggie","photoUrls":["NfZS0z0c8_CNLvyJ"],"tags":[{"id":947,"name":"\nhttps://test-api-appliance.tinfoil.co/scanner_phone_home/5e161aed-d3d8-42bb-8983-dd4d2dfd019b"}],"status":"sold"},{"id":275,"category":{"id":748,"name":"R216H3lI_tq-5gH6"},"name":"doggie","photoUrls":["IMXO8DFShX5IEzGb"],"tags":[{"id":29,"name":"TiQR-E9aOkhh96Cr"}],"status":"sold"},{"id":412,"category":{"id":437,"name":"E5y1BQgnRedZfKFE"},"name":"doggie","photoUrls":["5CFgQa2pGyH9LOuz"],"tags":[{"id":880,"name":"file://WEB-INF/web.xml"}],"status":"sold"},{"id":472,"category":{"id":628,"name":"luI1WJw_nu8uNYG6"},"name":"doggie","photoUrls":["scEbjLsbuCLgs8nR"],"tags":[{"id":101,"name":"file://WEB-INF/web.xml"}],"status":"sold"},{"id":400,"name":"Jefke","photoUrls":["PhotoUrl-1","PhotoUrl-2","PhotoUrl-3"],"tags":[{"id":1,"name":"Tag-1"},{"id":2,"name":"Tag-2"},{"id":3,"name":"Tag-3"}],"status":"sold"},{"id":5,"name":"doggie","photoUrls":["https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg","url2"],"tags":[],"status":"sold"}]
+Request method:	POST
+Request URI:	http://petstore.swagger.io/v2/pet/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"id":536923,"category":{"id":536923,"name":"lmauSqr"},"name":"lmauSqr","photoUrls":["vcLumGyoHf"],"tags":[{"id":536923,"name":"lmauSqr"}],"status":"pending"}
+HTTP/1.1 200 OK
+Date: Tue, 03 Sep 2019 12:51:16 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"id":536923,"category":{"id":536923,"name":"lmauSqr"},"name":"lmauSqr","photoUrls":["vcLumGyoHf"],"tags":[{"id":536923,"name":"lmauSqr"}],"status":"pending"}
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/pet/536923
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 03 Sep 2019 12:51:16 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"id":536923,"category":{"id":536923,"name":"lmauSqr"},"name":"lmauSqr","photoUrls":["vcLumGyoHf"],"tags":[{"id":536923,"name":"lmauSqr"}],"status":"pending"}
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/pet/536923
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 03 Sep 2019 12:51:17 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"id":536923,"category":{"id":536923,"name":"lmauSqr"},"name":"lmauSqr","photoUrls":["vcLumGyoHf"],"tags":[{"id":536923,"name":"lmauSqr"}],"status":"pending"}
+Request method:	PUT
+Request URI:	http://petstore.swagger.io/v2/pet/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"id":536923,"category":{"id":536923,"name":"QIPMLKEfQu"},"name":"SIJsHjAGUe","photoUrls":["vcLumGyoHf"],"tags":[{"id":536923,"name":"lmauSqr"}],"status":"pending"}
+HTTP/1.1 200 OK
+Date: Tue, 03 Sep 2019 12:51:17 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"id":536923,"category":{"id":536923,"name":"QIPMLKEfQu"},"name":"SIJsHjAGUe","photoUrls":["vcLumGyoHf"],"tags":[{"id":536923,"name":"lmauSqr"}],"status":"pending"}
+Request method:	DELETE
+Request URI:	http://petstore.swagger.io/v2/pet/536923
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 03 Sep 2019 12:51:18 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/pet/536923
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Tue, 03 Sep 2019 12:51:18 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"code":1,"type":"error","message":"Pet not found"}
+
+DEBUG Request method:	POST
+Request URI:	http://petstore.swagger.io/v2/pet/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"id":"sZG","name":670,"status":637}
+HTTP/1.1 500 Server Error
+Date: Tue, 03 Sep 2019 12:51:14 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"code":500,"type":"unknown","message":"something bad happened"}
+Request method:	DELETE
+Request URI:	http://petstore.swagger.io/v2/pet/536923
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Tue, 03 Sep 2019 12:51:15 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/pet/536923
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Tue, 03 Sep 2019 12:51:15 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"code":1,"type":"error","message":"Pet not found"}
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/pet/findByStatus?status=sold
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 03 Sep 2019 12:51:15 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+[{"id":9199424981609313756,"name":"doggie","photoUrls":[],"tags":[],"status":"sold"},{"id":9199424981609314168,"name":"doggie","photoUrls":[],"tags":[],"status":"sold"},{"id":9199424981609314252,"name":"doggie","photoUrls":[],"tags":[],"status":"sold"},{"id":11550,"category":{"id":11210,"name":"string2"},"name":"doggie","photoUrls":["string2"],"tags":[{"id":11310,"name":"string3"}],"status":"sold"},{"id":72951,"category":{"id":72951,"name":"Lab123456789"},"name":"doggie","photoUrls":[""],"tags":[{"id":72951,"name":"RandomNames"}],"status":"sold"},{"id":9199424981609314953,"name":"","photoUrls":[],"tags":[{"id":0,"name":"scfsdfa"}],"status":"sold"},{"id":-984,"category":{"id":675,"name":"sep9vcfBhS_yTlw9"},"name":"doggie","photoUrls":["wGIuVU-vLshVjKyB","uccRtPf7ImnXFwN6","y7i3i0nV3MytV8V2","ip7C5QaNeIoz4AZz","Xxp1wsb40ROF06Pp","OdoJX_kYtuxraPyE","_USv3cGoAU8HYd4O","Zf0wq9yu9s4Ox2sg","EtKmYAt_P9d0MgWG","7nOnUlPpiWma5kur"],"tags":[{"id":-972,"name":"AXMJO_g6chPZ8e6W"},{"id":-515,"name":"N2MwQJZ08iFxVVYr"},{"id":-377,"name":"EtYET5_V0EjnmBbB"},{"id":-417,"name":"l-lAvkBbcwGzD7ok"}],"status":"sold"},{"id":9199424981609315569,"name":"doggie","photoUrls":[],"tags":[],"status":"sold"},{"id":1122338468915,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":9199424981609315637,"name":"Charlie","photoUrls":[],"tags":[],"status":"sold"},{"id":9199424981609315739,"name":"cat4","photoUrls":[],"tags":[],"status":"sold"},{"id":9199424981609315759,"category":{"id":0,"name":"string"},"name":"isha","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":9199424981609315746,"category":{"id":0,"name":"string"},"name":"cat5","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":9199424981609315783,"category":{"id":0,"name":"string"},"name":"isha","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":9199424981609315787,"category":{"id":0,"name":"string"},"name":"isha","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":9199424981609315760,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":9199424981609320803,"name":"doggie","photoUrls":[],"tags":[],"status":"sold"},{"id":9199424981609320817,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":3456781,"category":{"id":3456781,"name":"sdfgdf"},"name":"sdfgdf","photoUrls":["string"],"tags":[{"id":3456781,"name":"sdfgdf"}],"status":"sold"},{"id":9199424981609322276,"name":"doggie","photoUrls":[],"tags":[],"status":"sold"},{"id":1122338486467,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338476506,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338442392,"category":{"id":5436,"name":"soaspec_test"},"name":"CharlieAngels","photoUrls":[],"tags":[],"status":"sold"},{"id":1122338476427,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":11111111111,"category":{"id":0,"name":"hepsi"},"name":"kopekkk","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":639587,"category":{"id":12,"name":"jjJakPHFOb"},"name":"perro","photoUrls":["yboRbch"],"tags":[{"id":13,"name":"jjJakPHFOb"}],"status":"sold"},{"id":1122338445947,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338477800,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338498054,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1234987,"category":{"id":1234987,"name":"Jyo"},"name":"Jyo","photoUrls":["string"],"tags":[{"id":1234987,"name":"Jyo"}],"status":"sold"},{"id":3456987,"category":{"id":3456987,"name":"Jyothi"},"name":"Jyothi","photoUrls":["string"],"tags":[{"id":3456987,"name":"Jyothi"}],"status":"sold"},{"id":126754,"category":{"id":126754,"name":"Jyoti"},"name":"Jyoti","photoUrls":["string"],"tags":[{"id":126754,"name":"Jyoti"}],"status":"sold"},{"id":1122338463967,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338423808,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338487365,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338482505,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":842161,"category":{"id":0,"name":""},"name":"eTFFIAo","photoUrls":["hLOmVfPNUe"],"tags":[{"id":0,"name":""}],"status":"sold"},{"id":1122338428978,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":100000,"category":{"id":0,"name":"category1"},"name":"pet1","photoUrls":["url1"],"tags":[{"id":0,"name":"tag1"}],"status":"sold"},{"id":1122338433059,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":1122338445754,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":533695,"category":{"id":0,"name":""},"name":"buddy","photoUrls":["OKmOSnKGrV"],"tags":[{"id":0,"name":""}],"status":"sold"},{"id":131621,"category":{"id":1234,"name":"eyeColor"},"name":"Fluffy","photoUrls":["https://petstore.com/sample/photo1.jpg"],"tags":[{"id":1234,"name":"New York"},{"id":124321,"name":"Jose"}],"status":"sold"},{"id":926660,"category":{"id":1234,"name":"eyeColor"},"name":"Fluffy","photoUrls":["https://petstore.com/sample/photo1.jpg"],"tags":[{"id":1234,"name":"New York"},{"id":124321,"name":"Jose"}],"status":"sold"},{"id":248447,"category":{"id":1234,"name":"eyeColor"},"name":"Fluffy","photoUrls":["https://petstore.com/sample/photo1.jpg"],"tags":[{"id":1234,"name":"New York"},{"id":124321,"name":"Jose"}],"status":"sold"},{"id":305686,"category":{"id":1234,"name":"eyeColor"},"name":"Fluffy","photoUrls":["https://petstore.com/sample/photo1.jpg"],"tags":[{"id":1234,"name":"New York"},{"id":124321,"name":"Jose"}],"status":"sold"},{"id":979941,"category":{"id":1234,"name":"eyeColor"},"name":"Fluffy","photoUrls":["https://petstore.com/sample/photo1.jpg"],"tags":[{"id":1234,"name":"New York"},{"id":124321,"name":"Jose"}],"status":"sold"},{"id":632920,"category":{"id":1234,"name":"eyeColor"},"name":"Fluffy","photoUrls":["https://petstore.com/sample/photo1.jpg"],"tags":[{"id":1234,"name":"New York"},{"id":124321,"name":"Jose"}],"status":"sold"},{"id":1122338495273,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":895889,"category":{"id":12,"name":"qBTYVqHBlo"},"name":"perro","photoUrls":["OuJqZIS"],"tags":[{"id":13,"name":"qBTYVqHBlo"}],"status":"sold"},{"id":712553,"category":{"id":12,"name":"QfzuBcCYrg"},"name":"perro","photoUrls":["lVMjjId"],"tags":[{"id":13,"name":"QfzuBcCYrg"}],"status":"sold"},{"id":857227,"category":{"id":12,"name":"bypAvkAHHT"},"name":"perro","photoUrls":["iXGPbEY"],"tags":[{"id":13,"name":"bypAvkAHHT"}],"status":"sold"},{"id":26814,"category":{"id":12,"name":"bGHzujQmeA"},"name":"perro","photoUrls":["XmhfBMU"],"tags":[{"id":13,"name":"bGHzujQmeA"}],"status":"sold"},{"id":864522,"category":{"id":12,"name":"rbhPPjHhiT"},"name":"perro","photoUrls":["dksBDiS"],"tags":[{"id":13,"name":"rbhPPjHhiT"}],"status":"sold"},{"id":1122338490251,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":10001,"name":"update pet with form","photoUrls":[],"tags":[],"status":"sold"},{"id":29349,"category":{"id":12,"name":"wpxPCqfUnn"},"name":"perro","photoUrls":["eUclHOA"],"tags":[{"id":13,"name":"wpxPCqfUnn"}],"status":"sold"},{"id":1122338459163,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":9199424981609314057,"category":{"id":0,"name":"ABCD"},"name":"doggieUpdated","photoUrls":["SampleImage1.png"],"tags":[{"id":0,"name":"TestTag1"}],"status":"sold"},{"id":92816,"category":{"id":95754,"name":"IXaUsIC"},"name":"BgdCpcX","photoUrls":["BQpqfUY"],"tags":[{"id":68451,"name":"UNGnAgu"}],"status":"sold"},{"id":61810,"category":{"id":71112,"name":"sMZgLtu"},"name":"jfpOnZV","photoUrls":["fHFeKIJ"],"tags":[{"id":10205,"name":"taRkBhy"}],"status":"sold"},{"id":39835,"category":{"id":44753,"name":"vyXZakq"},"name":"vhhrToZ","photoUrls":["CEmJnOv"],"tags":[{"id":92812,"name":"UgtRuQd"}],"status":"sold"},{"id":46154,"category":{"id":83975,"name":"GZnHtpb"},"name":"YaKZIhC","photoUrls":["uMgvDuY"],"tags":[{"id":74501,"name":"pXQQCxD"}],"status":"sold"},{"id":1234567890,"name":"Molly","photoUrls":[],"tags":[],"status":"sold"},{"id":998877,"name":"","photoUrls":[],"tags":[{"id":112345,"name":"LolaTest029"}],"status":"sold"},{"id":9199424981609313405,"category":{"id":0,"name":"string"},"name":"cattie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":1602,"category":{"id":101,"name":"testcategory"},"name":"valueimplcat","photoUrls":["a.png","b.png"],"tags":[{"id":102,"name":"testtag1"},{"id":103,"name":"testtag2"}],"status":"sold"},{"id":15435006001660,"category":{"id":2432432,"name":"category_name"},"name":"5239423","photoUrls":["test URL"],"tags":[{"id":5,"name":"fact tag"}],"status":"sold"},{"id":1122338459294,"category":{"id":5436,"name":"soaspec_test"},"name":"Charlie","photoUrls":["string"],"tags":[{"id":1,"name":"string"}],"status":"sold"},{"id":819,"category":{"id":762,"name":"Pth9plf0cNvYBDNe"},"name":"doggie","photoUrls":["jsofuEU7kqxpPTZT"],"tags":[{"id":139,"name":"QDfnBd5LeWua3n-Q"}],"status":"sold"},{"id":140,"category":{"id":737,"name":"hnDqvLReBChiev-e"},"name":"doggie","photoUrls":["ggBA9J7wb5iDmG1s"],"tags":[{"id":670,"name":"dBhhkoDLdQtNTxvm"}],"status":"sold"},{"id":413,"category":{"id":71,"name":"zeqbnGlmOtZxhPCV"},"name":"doggie","photoUrls":["7OTkjnpXfK6qRcXd"],"tags":[{"id":31,"name":"rlnhHZIGyN29X4km"}],"status":"sold"},{"id":121,"category":{"id":10,"name":"WNNiemiYVw-k14Lt"},"name":"doggie","photoUrls":["qDGUlMsiiLduB1H1"],"tags":[{"id":84,"name":"RoKKxRN8nQxqE4HE"}],"status":"sold"},{"id":920,"category":{"id":843,"name":"BE4LxsOLA1-I0GsT"},"name":"doggie","photoUrls":["dA2VAoJnTNaQ1RVu"],"tags":[{"id":732,"name":"TINFOILLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL"}],"status":"sold"},{"id":590,"category":{"id":337,"name":"r7Pxb6KHXm2v5zHC"},"name":"doggie","photoUrls":["87lZheIQIng05RL2"],"tags":[{"id":690,"name":"<?xml version=\"1.0\"?>\n<!DOCTYPE tinfoil [<!ENTITY external SYSTEM \"https://test-api-appliance.tinfoil.co/scanner_phone_home/444c0cd7-8972-48a5-b934-af37eee353bd\">]>\n<tinfoil>&external;</tinfoil>}\n"}],"status":"sold"},{"id":289,"category":{"id":37,"name":"Pp8Wqc2ErcJuHt-8"},"name":"doggie","photoUrls":["mPShNq2qpWbkz74P"],"tags":[{"id":866,"name":"-spW6C--ZFSbPKEf"}],"status":"sold"},{"id":519,"category":{"id":834,"name":"q3IQoiEhkC2ThD62"},"name":"doggie","photoUrls":["TmwtAQA0d3Wp-j2x"],"tags":[{"id":625,"name":"4VNzF5Xk_opw37FQ)"}],"status":"sold"},{"id":259,"category":{"id":468,"name":"BPLgWYZcNiwcHjjV"},"name":"doggie","photoUrls":["tRPudAM8J-JwyLrs"],"tags":[{"id":15,"name":"y1XA4FtOHJCqcBOg)"}],"status":"sold"},{"id":101,"category":{"id":920,"name":"G4xmun_fnNwVq4hF"},"name":"doggie","photoUrls":["1XveRO5g3gzQwGjX"],"tags":[{"id":710,"name":"\nhttps://test-api-appliance.tinfoil.co/scanner_phone_home/25be252c-19e6-445c-a6b1-42aab71ee069"}],"status":"sold"},{"id":445,"category":{"id":907,"name":"-Kb-9u9rz5Ac1amt"},"name":"doggie","photoUrls":["dlpGahqe_uPwUHuw"],"tags":[{"id":500,"name":"8mAQQSupKWixj9Sy"}],"status":"sold"},{"id":468,"category":{"id":26,"name":"WmW7Ou3jo809nkF9"},"name":"doggie","photoUrls":["rtsly7f2KvhYy554"],"tags":[{"id":3,"name":"nMnvvnlNPwi6Lcvv"}],"status":"sold"},{"id":320,"category":{"id":287,"name":"9ALFlYn_XYxB2XFn"},"name":"doggie","photoUrls":["_STGjD3uuWpdQUsz"],"tags":[{"id":932,"name":"cnY2vX19exeSeKEE` type %SystemRoot%\\\\win.ini`"}],"status":"sold"},{"id":705,"category":{"id":476,"name":"yTP-DH6g0bCvo-Oo"},"name":"doggie","photoUrls":["cUgTdExdV_Td_uQv"],"tags":[{"id":39,"name":"7S4LLzQsdiQxX-dN"}],"status":"sold"},{"id":870,"category":{"id":636,"name":"PG0Y3KsROCW1ni4w"},"name":"doggie","photoUrls":["1gR9JCXVCHmxHzmU"],"tags":[{"id":69,"name":"o_LT_4qekq1XzHSy"}],"status":"sold"},{"id":272,"category":{"id":378,"name":"LUx2HoQr0AkDNr4c"},"name":"doggie","photoUrls":["mqmRZBl2Qz59x3ah"],"tags":[{"id":555,"name":"S9Oc0FzOI9CJGO1m` type %SystemRoot%\\\\win.ini`"}],"status":"sold"},{"id":328,"category":{"id":1016,"name":"ykxtJ7YSNwKa05Bo"},"name":"doggie","photoUrls":["nEfB484oh3jzt4J9"],"tags":[{"id":231,"name":"\nhttps://test-api-appliance.tinfoil.co/scanner_phone_home/3c39e951-649a-4d8e-89ec-e202589d06dc"}],"status":"sold"},{"id":700,"category":{"id":492,"name":"8OL9skwzEHfXEUGl"},"name":"doggie","photoUrls":["NfZS0z0c8_CNLvyJ"],"tags":[{"id":947,"name":"\nhttps://test-api-appliance.tinfoil.co/scanner_phone_home/5e161aed-d3d8-42bb-8983-dd4d2dfd019b"}],"status":"sold"},{"id":275,"category":{"id":748,"name":"R216H3lI_tq-5gH6"},"name":"doggie","photoUrls":["IMXO8DFShX5IEzGb"],"tags":[{"id":29,"name":"TiQR-E9aOkhh96Cr"}],"status":"sold"},{"id":412,"category":{"id":437,"name":"E5y1BQgnRedZfKFE"},"name":"doggie","photoUrls":["5CFgQa2pGyH9LOuz"],"tags":[{"id":880,"name":"file://WEB-INF/web.xml"}],"status":"sold"},{"id":472,"category":{"id":628,"name":"luI1WJw_nu8uNYG6"},"name":"doggie","photoUrls":["scEbjLsbuCLgs8nR"],"tags":[{"id":101,"name":"file://WEB-INF/web.xml"}],"status":"sold"},{"id":400,"name":"Jefke","photoUrls":["PhotoUrl-1","PhotoUrl-2","PhotoUrl-3"],"tags":[{"id":1,"name":"Tag-1"},{"id":2,"name":"Tag-2"},{"id":3,"name":"Tag-3"}],"status":"sold"},{"id":5,"name":"doggie","photoUrls":["https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg","url2"],"tags":[],"status":"sold"}]
+Request method:	POST
+Request URI:	http://petstore.swagger.io/v2/pet/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"id":536923,"category":{"id":536923,"name":"lmauSqr"},"name":"lmauSqr","photoUrls":["vcLumGyoHf"],"tags":[{"id":536923,"name":"lmauSqr"}],"status":"pending"}
+HTTP/1.1 200 OK
+Date: Tue, 03 Sep 2019 12:51:16 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"id":536923,"category":{"id":536923,"name":"lmauSqr"},"name":"lmauSqr","photoUrls":["vcLumGyoHf"],"tags":[{"id":536923,"name":"lmauSqr"}],"status":"pending"}
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/pet/536923
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 03 Sep 2019 12:51:16 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"id":536923,"category":{"id":536923,"name":"lmauSqr"},"name":"lmauSqr","photoUrls":["vcLumGyoHf"],"tags":[{"id":536923,"name":"lmauSqr"}],"status":"pending"}
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/pet/536923
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 03 Sep 2019 12:51:17 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"id":536923,"category":{"id":536923,"name":"lmauSqr"},"name":"lmauSqr","photoUrls":["vcLumGyoHf"],"tags":[{"id":536923,"name":"lmauSqr"}],"status":"pending"}
+Request method:	PUT
+Request URI:	http://petstore.swagger.io/v2/pet/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"id":536923,"category":{"id":536923,"name":"QIPMLKEfQu"},"name":"SIJsHjAGUe","photoUrls":["vcLumGyoHf"],"tags":[{"id":536923,"name":"lmauSqr"}],"status":"pending"}
+HTTP/1.1 200 OK
+Date: Tue, 03 Sep 2019 12:51:17 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"id":536923,"category":{"id":536923,"name":"QIPMLKEfQu"},"name":"SIJsHjAGUe","photoUrls":["vcLumGyoHf"],"tags":[{"id":536923,"name":"lmauSqr"}],"status":"pending"}
+Request method:	DELETE
+Request URI:	http://petstore.swagger.io/v2/pet/536923
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 03 Sep 2019 12:51:18 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/pet/536923
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Tue, 03 Sep 2019 12:51:18 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"code":1,"type":"error","message":"Pet not found"}
+

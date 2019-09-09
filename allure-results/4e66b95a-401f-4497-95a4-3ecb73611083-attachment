@@ -1,0 +1,28 @@
+DEBUG Request method:	POST
+Request URI:	http://petstore.swagger.io/v2/pet/524489/uploadImage
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=524489
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		<none>
+Multiparts:		------------
+				Content-Disposition: form-data; name = file; filename = PetPicture.jpg
+				Content-Type: application/octet-stream
+
+				C:\Users\Арсен\Desktop\PetPicture.jpg
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 03 Sep 2019 13:40:27 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"code":200,"type":"unknown","message":"additionalMetadata: null\nFile uploaded to ./PetPicture.jpg, 34424 bytes"}
+

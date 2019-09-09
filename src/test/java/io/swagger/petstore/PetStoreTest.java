@@ -7,9 +7,12 @@ import clients.PetClients;
 import failModels.PetFailModel;
 import models.PetModel;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import util.Listener;
 
 
+@Listeners(Listener.class)
 public class PetStoreTest extends PetClients {
 
 
@@ -32,34 +35,38 @@ public class PetStoreTest extends PetClients {
         petBL.deletePresentPetTest(testPetOne);
         petBL.getPetByInvalIDTest(testPetOne);
 
+
     }
+
     @Test
     public void uploadImage() {
         petBL.uploadImageTest(testPetOne);
+
     }
-
-
 
     @Test
     public void getInvalidPet() {
         petBL.getPetByInvalIDTest(testPetOne);
+
     }
 
-    @Test//(expectedExceptions = AssertionError.class)//?
+    @Test
     public void deleteNotPresentPet() {
         petBL.deleteNotPresentPet(testPetOne);
-    }
 
+    }
 
     @Test
     public void addPetWithInvalidData() {
         PetFailModel petFailModel = new FailPetCreateBuilders().createFailPet();
         petBL.addPetWithInvalidDataTest(petFailModel);
+
     }
 
     @Test
     public void getPetByStatus() {
         petBL.getPetByStatusTest("sold");
+
     }
 
 }

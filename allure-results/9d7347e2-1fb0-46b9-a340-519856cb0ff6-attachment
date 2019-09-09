@@ -1,0 +1,139 @@
+DEBUG Request method:	POST
+Request URI:	http://petstore.swagger.io/v2/pet/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"id":799931,"category":{"id":799931,"name":"sfjayIJ"},"name":"sfjayIJ","photoUrls":["WhDhdRQvMH"],"tags":[{"id":799931,"name":"sfjayIJ"}],"status":"pending"}
+HTTP/1.1 200 OK
+Date: Wed, 04 Sep 2019 06:04:12 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"id":799931,"category":{"id":799931,"name":"sfjayIJ"},"name":"sfjayIJ","photoUrls":["WhDhdRQvMH"],"tags":[{"id":799931,"name":"sfjayIJ"}],"status":"pending"}
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/pet/799931
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 04 Sep 2019 06:04:13 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"id":799931,"category":{"id":799931,"name":"sfjayIJ"},"name":"sfjayIJ","photoUrls":["WhDhdRQvMH"],"tags":[{"id":799931,"name":"sfjayIJ"}],"status":"pending"}
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/pet/799931
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 04 Sep 2019 06:04:13 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"id":799931,"category":{"id":799931,"name":"sfjayIJ"},"name":"sfjayIJ","photoUrls":["WhDhdRQvMH"],"tags":[{"id":799931,"name":"sfjayIJ"}],"status":"pending"}
+Request method:	PUT
+Request URI:	http://petstore.swagger.io/v2/pet/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"id":799931,"category":{"id":799931,"name":"EJHDHXAmec"},"name":"jqJYDpITqk","photoUrls":["WhDhdRQvMH"],"tags":[{"id":799931,"name":"sfjayIJ"}],"status":"pending"}
+HTTP/1.1 200 OK
+Date: Wed, 04 Sep 2019 06:04:13 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"id":799931,"category":{"id":799931,"name":"EJHDHXAmec"},"name":"jqJYDpITqk","photoUrls":["WhDhdRQvMH"],"tags":[{"id":799931,"name":"sfjayIJ"}],"status":"pending"}
+Request method:	DELETE
+Request URI:	http://petstore.swagger.io/v2/pet/799931
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 04 Sep 2019 06:04:14 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+Request method:	GET
+Request URI:	http://petstore.swagger.io/v2/pet/799931
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		api_key=252525
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Wed, 04 Sep 2019 06:04:14 GMT
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Content-Type: application/json
+Connection: close
+Server: Jetty(9.2.9.v20150224)
+
+{"code":1,"type":"error","message":"Pet not found"}
+

@@ -17,7 +17,6 @@ public class PetBL {
 
         petModel.setName(RandomStringUtils.randomAlphabetic(10));
         petModel.getCategory().setName(RandomStringUtils.randomAlphabetic(10));
-
         return petModel;
     }
 
@@ -36,7 +35,6 @@ public class PetBL {
     public void updatePetTest(PetModel testPetOne) {
         PetModel testPetTwo = petClient.getPetByID(testPetOne.getId()).as(PetModel.class);
         response = petClient.updatePet(doUpdate(testPetTwo));
-
         BaseAssertions.baseAssert(response, StatusCode.statusCode.OK.getValue());
         PetAssertions.areEquals(response.getBody().as(PetModel.class), testPetTwo);
     }
@@ -48,13 +46,11 @@ public class PetBL {
 
     public void uploadImageTest(PetModel testPetOne) {
         response = petClient.petPostUploadImage(testPetOne.getId());
-
         BaseAssertions.baseAssert(response, StatusCode.statusCode.OK.getValue());
     }
 
     public void getPetByStatusTest(String status) {
         response = petClient.getPetByStatus(status);
-
         BaseAssertions.baseAssert(response, StatusCode.statusCode.OK.getValue());
     }
 
@@ -69,6 +65,7 @@ public class PetBL {
         response = petClient.deletePet(testPetModel.getId());
         BaseAssertions.baseAssertForPetWithoutBody(response, StatusCode.statusCode.OBJECT_NOT_FOUND.getValue());
     }
+
     public void addPetWithInvalidDataTest(PetFailModel petFailModel) {
         response = petClient.addNewPet(petFailModel);
         BaseAssertions.baseAssert(response, StatusCode.statusCode.OK.getValue());
