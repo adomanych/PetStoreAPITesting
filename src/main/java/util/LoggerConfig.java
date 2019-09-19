@@ -18,7 +18,7 @@ public class LoggerConfig {
     public Logger loggerConfig() throws IOException {
         Logger log = Logger.getLogger(loggerName);
         log.setLevel(Level.DEBUG);
-        log.addAppender(new FileAppender(new PatternLayout("-5p %m%n"),
+        log.addAppender(new FileAppender(new PatternLayout("%m%n"),
                 filePath + loggerName + ".log"));
         return log;
 

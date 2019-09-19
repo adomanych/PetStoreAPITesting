@@ -2,33 +2,33 @@
 <testng-results ignored="0" total="12" passed="6" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-09-09T09:18:35 EEST" name="TestSuite" finished-at="2019-09-09T09:18:48 EEST" duration-ms="12975">
+  <suite started-at="2019-09-09T12:52:58 EEST" name="TestSuite" finished-at="2019-09-09T12:53:09 EEST" duration-ms="11742">
     <groups>
     </groups>
-    <test started-at="2019-09-09T09:18:35 EEST" name="AutoQA" finished-at="2019-09-09T09:18:48 EEST" duration-ms="12975">
+    <test started-at="2019-09-09T12:52:58 EEST" name="AutoQA" finished-at="2019-09-09T12:53:09 EEST" duration-ms="11742">
       <class name="io.swagger.petstore.OrderTest">
-        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:io.swagger.petstore.OrderTest@2d6aca33]" started-at="2019-09-09T09:18:35 EEST" name="setUp" finished-at="2019-09-09T09:18:35 EEST" duration-ms="62" status="PASS">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:io.swagger.petstore.OrderTest@1e63d216]" started-at="2019-09-09T12:52:58 EEST" name="setUp" finished-at="2019-09-09T12:52:58 EEST" duration-ms="69" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@63718b93]]>
+                <![CDATA[org.testng.TestRunner@3d36dff4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="orderTest()[pri:0, instance:io.swagger.petstore.OrderTest@2d6aca33]" started-at="2019-09-09T09:18:35 EEST" name="orderTest" finished-at="2019-09-09T09:18:40 EEST" duration-ms="4971" status="PASS">
+        <test-method signature="orderTest()[pri:0, instance:io.swagger.petstore.OrderTest@1e63d216]" started-at="2019-09-09T12:52:58 EEST" name="orderTest" finished-at="2019-09-09T12:53:03 EEST" duration-ms="4891" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderTest -->
       </class> <!-- io.swagger.petstore.OrderTest -->
       <class name="io.swagger.petstore.UserTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:io.swagger.petstore.UserTest@29314cc9]" started-at="2019-09-09T09:18:46 EEST" name="setUp" finished-at="2019-09-09T09:18:46 EEST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:io.swagger.petstore.UserTest@16c3ca31]" started-at="2019-09-09T12:53:07 EEST" name="setUp" finished-at="2019-09-09T12:53:07 EEST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TestLoginAndLogoutUser()[pri:0, instance:io.swagger.petstore.UserTest@29314cc9]" started-at="2019-09-09T09:18:46 EEST" name="TestLoginAndLogoutUser" finished-at="2019-09-09T09:18:46 EEST" duration-ms="375" status="FAIL">
+        <test-method signature="TestLoginAndLogoutUser()[pri:0, instance:io.swagger.petstore.UserTest@16c3ca31]" started-at="2019-09-09T12:53:07 EEST" name="TestLoginAndLogoutUser" finished-at="2019-09-09T12:53:08 EEST" duration-ms="734" status="FAIL">
           <exception class="com.fasterxml.jackson.databind.exc.MismatchedInputException">
             <message>
               <![CDATA[No content to map due to end-of-input
@@ -75,7 +75,7 @@ at java.base/java.lang.Thread.run(Thread.java:835)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLoginAndLogoutUser -->
-        <test-method signature="UpdateUserTest()[pri:0, instance:io.swagger.petstore.UserTest@29314cc9]" started-at="2019-09-09T09:18:46 EEST" name="UpdateUserTest" finished-at="2019-09-09T09:18:46 EEST" duration-ms="375" status="FAIL">
+        <test-method signature="UpdateUserTest()[pri:0, instance:io.swagger.petstore.UserTest@16c3ca31]" started-at="2019-09-09T12:53:08 EEST" name="UpdateUserTest" finished-at="2019-09-09T12:53:08 EEST" duration-ms="251" status="FAIL">
           <exception class="com.fasterxml.jackson.databind.exc.MismatchedInputException">
             <message>
               <![CDATA[No content to map due to end-of-input
@@ -122,7 +122,7 @@ at java.base/java.lang.Thread.run(Thread.java:835)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UpdateUserTest -->
-        <test-method signature="addArrayOfUserTest()[pri:0, instance:io.swagger.petstore.UserTest@29314cc9]" started-at="2019-09-09T09:18:46 EEST" name="addArrayOfUserTest" finished-at="2019-09-09T09:18:47 EEST" duration-ms="320" status="FAIL">
+        <test-method signature="addArrayOfUserTest()[pri:0, instance:io.swagger.petstore.UserTest@16c3ca31]" started-at="2019-09-09T12:53:08 EEST" name="addArrayOfUserTest" finished-at="2019-09-09T12:53:09 EEST" duration-ms="356" status="FAIL">
           <exception class="com.fasterxml.jackson.databind.exc.MismatchedInputException">
             <message>
               <![CDATA[No content to map due to end-of-input
@@ -169,7 +169,7 @@ at java.base/java.lang.Thread.run(Thread.java:835)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addArrayOfUserTest -->
-        <test-method signature="addListOfUserstest()[pri:0, instance:io.swagger.petstore.UserTest@29314cc9]" started-at="2019-09-09T09:18:47 EEST" name="addListOfUserstest" finished-at="2019-09-09T09:18:47 EEST" duration-ms="329" status="FAIL">
+        <test-method signature="addListOfUserstest()[pri:0, instance:io.swagger.petstore.UserTest@16c3ca31]" started-at="2019-09-09T12:53:09 EEST" name="addListOfUserstest" finished-at="2019-09-09T12:53:09 EEST" duration-ms="365" status="FAIL">
           <exception class="com.fasterxml.jackson.databind.exc.MismatchedInputException">
             <message>
               <![CDATA[No content to map due to end-of-input
@@ -216,7 +216,7 @@ at java.base/java.lang.Thread.run(Thread.java:835)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addListOfUserstest -->
-        <test-method signature="firstTest()[pri:0, instance:io.swagger.petstore.UserTest@29314cc9]" started-at="2019-09-09T09:18:47 EEST" name="firstTest" finished-at="2019-09-09T09:18:48 EEST" duration-ms="514" status="FAIL">
+        <test-method signature="firstTest()[pri:0, instance:io.swagger.petstore.UserTest@16c3ca31]" started-at="2019-09-09T12:53:09 EEST" name="firstTest" finished-at="2019-09-09T12:53:09 EEST" duration-ms="258" status="FAIL">
           <exception class="com.fasterxml.jackson.databind.exc.MismatchedInputException">
             <message>
               <![CDATA[No content to map due to end-of-input
@@ -265,7 +265,11 @@ at java.base/java.lang.Thread.run(Thread.java:835)
         </test-method> <!-- firstTest -->
       </class> <!-- io.swagger.petstore.UserTest -->
       <class name="io.swagger.petstore.PetStoreTest">
-        <test-method signature="addPetWithInvalidData()[pri:0, instance:io.swagger.petstore.PetStoreTest@21ab988f]" started-at="2019-09-09T09:18:40 EEST" name="addPetWithInvalidData" finished-at="2019-09-09T09:18:41 EEST" duration-ms="578" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:io.swagger.petstore.PetStoreTest@62ddd21b]" started-at="2019-09-09T12:53:03 EEST" name="setUp" finished-at="2019-09-09T12:53:03 EEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addPetWithInvalidData()[pri:0, instance:io.swagger.petstore.PetStoreTest@62ddd21b]" started-at="2019-09-09T12:53:03 EEST" name="addPetWithInvalidData" finished-at="2019-09-09T12:53:03 EEST" duration-ms="350" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -300,27 +304,23 @@ at java.base/java.lang.Thread.run(Thread.java:835)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPetWithInvalidData -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:io.swagger.petstore.PetStoreTest@21ab988f]" started-at="2019-09-09T09:18:40 EEST" name="setUp" finished-at="2019-09-09T09:18:40 EEST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="deleteNotPresentPet()[pri:0, instance:io.swagger.petstore.PetStoreTest@21ab988f]" started-at="2019-09-09T09:18:41 EEST" name="deleteNotPresentPet" finished-at="2019-09-09T09:18:41 EEST" duration-ms="422" status="PASS">
+        <test-method signature="deleteNotPresentPet()[pri:0, instance:io.swagger.petstore.PetStoreTest@62ddd21b]" started-at="2019-09-09T12:53:03 EEST" name="deleteNotPresentPet" finished-at="2019-09-09T12:53:03 EEST" duration-ms="383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteNotPresentPet -->
-        <test-method signature="getInvalidPet()[pri:0, instance:io.swagger.petstore.PetStoreTest@21ab988f]" started-at="2019-09-09T09:18:41 EEST" name="getInvalidPet" finished-at="2019-09-09T09:18:41 EEST" duration-ms="360" status="PASS">
+        <test-method signature="getInvalidPet()[pri:0, instance:io.swagger.petstore.PetStoreTest@62ddd21b]" started-at="2019-09-09T12:53:04 EEST" name="getInvalidPet" finished-at="2019-09-09T12:53:04 EEST" duration-ms="288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getInvalidPet -->
-        <test-method signature="getPetByStatus()[pri:0, instance:io.swagger.petstore.PetStoreTest@21ab988f]" started-at="2019-09-09T09:18:41 EEST" name="getPetByStatus" finished-at="2019-09-09T09:18:42 EEST" duration-ms="522" status="PASS">
+        <test-method signature="getPetByStatus()[pri:0, instance:io.swagger.petstore.PetStoreTest@62ddd21b]" started-at="2019-09-09T12:53:04 EEST" name="getPetByStatus" finished-at="2019-09-09T12:53:04 EEST" duration-ms="590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPetByStatus -->
-        <test-method signature="petTest()[pri:0, instance:io.swagger.petstore.PetStoreTest@21ab988f]" started-at="2019-09-09T09:18:42 EEST" name="petTest" finished-at="2019-09-09T09:18:45 EEST" duration-ms="2533" status="PASS">
+        <test-method signature="petTest()[pri:0, instance:io.swagger.petstore.PetStoreTest@62ddd21b]" started-at="2019-09-09T12:53:04 EEST" name="petTest" finished-at="2019-09-09T12:53:06 EEST" duration-ms="1892" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- petTest -->
-        <test-method signature="uploadImage()[pri:0, instance:io.swagger.petstore.PetStoreTest@21ab988f]" started-at="2019-09-09T09:18:45 EEST" name="uploadImage" finished-at="2019-09-09T09:18:46 EEST" duration-ms="909" status="PASS">
+        <test-method signature="uploadImage()[pri:0, instance:io.swagger.petstore.PetStoreTest@62ddd21b]" started-at="2019-09-09T12:53:06 EEST" name="uploadImage" finished-at="2019-09-09T12:53:07 EEST" duration-ms="621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadImage -->
