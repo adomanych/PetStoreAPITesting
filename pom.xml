@@ -14,7 +14,7 @@
         <!-- - - - - - Test - - - - - -->
         <org.testng.version>7.0.0</org.testng.version>
         <io.rest-asured.version>4.0.0</io.rest-asured.version>
-        <com.fasterxml.jackson.core.version>2.9.8</com.fasterxml.jackson.core.version>
+        <com.fasterxml.jackson.core.version>2.13.4.1</com.fasterxml.jackson.core.version>
         <org.apache.commons.version>3.9</org.apache.commons.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
         <!-- - - - - - Java - - - - - -->
